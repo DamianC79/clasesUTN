@@ -1,0 +1,35 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+*{
+    font-family: poppins, sans-serif;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px solid lightgray;
+    padding: 10px 0;
+    align-items: center;
+}
+div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 1050px) {
+    div{
+    display: none;
+    }
+    span{
+        display: none;
+    }
+}
+@media screen and (min-width:1050px){
+    i{display: none;}
+}
+
+
+
+button{
+    text-decoration: none;
+}

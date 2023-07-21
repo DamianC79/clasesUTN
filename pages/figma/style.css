@@ -1,0 +1,250 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+* {
+    font-family: Poppins, sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: auto;
+    font-size: 20px;
+    color:#524242;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 30px;
+}
+header i{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    padding: 20px;
+    font-size: 30px;
+}
+.button{
+    transition: ease-in;
+}
+.button:hover{
+    cursor: pointer;
+    scale: 1.5;
+}
+
+.buttons span{
+    border: 1px  solid lightgray;
+    border-radius: 10px;
+    padding: 10px 20px
+}
+
+.buttons :nth-child(2){
+    background-color:  #FFC727;
+    box-shadow: 2px -2px 20px 0  gray;
+}
+
+h1{
+    text-transform: capitalize;
+    font-size:2.5rem;
+    font-weight: 500;
+}
+h2{
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 5vh;
+    
+}
+
+.wordColored{
+    color: #FFC727;
+    font-size: 2.5rem;
+}
+h3{
+    font-size:1.8rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+h3 .wordColored{
+    font-size: 1.5rem;
+}
+p{
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding:0 30px;
+}
+.content{
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 2fr 4fr; */
+    gap: 15vw;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.cardsContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: #DFEAFF;
+    border-radius: 50px 50px 0 0 ;
+    padding: 30px;
+    width: 100%;
+    justify-content: space-between
+}
+.cardsContainer div{
+    background-color:#ffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 10px;
+    padding: 20px;
+    width: 360px;
+    height: 600px;
+}
+
+.cardsContainer div img{
+    padding: 20px 0;
+}
+
+.card{
+    box-shadow: 0px 4px  lightgray;
+}
+
+footer{
+    height: 100%;
+    display: flex;
+    padding: 50px 30px 50px;
+    justify-content: space-between;
+
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* footer div p{
+    color: gray;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0;
+} */
+.copyright{
+    display: flex;
+    color:gray;
+    align-items: center;
+}
+/* .icons{
+    display: flex;
+    justify-content: space-evenly;
+} */
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+i{
+    font-size: 30px;
+}
+.icon :nth-child(1){
+    color:#E50000;
+}
+.icon :nth-child(2){
+    color: #0076E2;
+}
+.icon :nth-child(3){
+    color: #00C5C5;
+}
+
+@media  screen and (max-width: 1050px) {
+    header div{
+        display: none;
+    }
+
+    h2{
+        padding-top: 30px;
+    }
+
+    main .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+    }
+    main .content img{
+        display: none;
+    }
+    main .content div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main .cardsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main .cardsContainer .card{
+        width: 280px;
+        height: 300px;
+        margin: 20px 10px;
+    }
+    main .cardsContainer .card h3{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .copyright{
+            font-size: .8rem;
+            padding: 20px 0;
+            align-items: center;
+            align-content: center;
+            text-align: center;
+    }
+footer .page-copyright .copyright{
+    display: none;
+}
+}
+@media screen and (min-width: 1050px) {
+    header i{
+        display:none
+    }
+    footer .icons .copyright{
+        display: none;
+    }
+}
