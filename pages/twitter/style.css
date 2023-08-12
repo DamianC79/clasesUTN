@@ -1,0 +1,156 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: SF Pro Display, Poppins, sans-serif;
+    font-size: 18px;
+    color: #DDDDDD;
+}
+
+body{
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr ;
+    grid-template-rows: 1fr 6fr 5fr;
+    grid-template-areas:
+    "nav nav nav"
+    "profileInfo main trends"
+    "mayYouKnow main trends"
+    ;
+    min-height: 100vh;
+    background-color: #080E24;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: nav;
+    padding: 0 30px;
+}
+header span button{
+    text-decoration: none;
+    border: none;
+    background-color: #7FCAFF14;
+}
+header span{
+    border-radius: 10px;
+    padding:5px;
+    align-items: center;
+}
+img{
+    height: 20px;
+    width: 20px;
+}
+main{
+    grid-area: main;
+    background-color: lightseagreen;
+}
+
+
+.profileInfo{
+    grid-area: profileInfo;
+    background-color: #7FCAFF14;
+}
+.profileInfo div{
+    padding: 10px 0 10px 0;
+}
+.banner{
+    width: 100%;
+    height: 100px;
+}
+.perfilpic{
+    height:80px;
+    width: 80px;
+    position: relative;
+    bottom: 40px;
+    left: 130px;
+}
+.mayYouKnow{
+    grid-area: mayYouKnow;
+    background-color: lightskyblue;
+}
+.trends{
+    grid-area: trends;
+    background-color: lightpink;
+}
+.buscador{
+    background-color: #7fcaff25;
+    border: 0;
+    border-radius: 10px;
+    padding: 5px;
+}
+header .search i{
+    color: #1090F2;
+}
+header .icons .home i{
+    color:#1090F2;
+}
+header .icons{
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+    background-color: #7fcaff25;
+    border-radius: 10px;
+    align-items: center;
+}
+i{
+    color: #ffff;
+}
+.info{
+    text-align: center;
+}
+.info h1{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.info h2{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.info p{
+    font-weight: 500;
+    font-size: .9rem;
+}
+.followers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-top: 1px solid lightslategray;
+    border-bottom: 1px solid lightslategray;
+    align-items: center;    
+}
+.followers div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.divider{
+    height: 30px;
+    border: 1px solid lightslategray;
+}
+.profileLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profileLink a{
+    color: #1090F2;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 900px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 70px 100px 100px auto;
+        grid-template-areas: 
+        "nav"
+        "profileInfo"
+        "mayYouKnow"
+        "trends"
+        "main"
+        ;
+    }
+}
